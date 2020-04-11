@@ -8,25 +8,34 @@ import { NgZorroAntdModule, NZ_I18N, en_US } from 'ng-zorro-antd';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { registerLocaleData } from '@angular/common';
+import { registerLocaleData, CommonModule } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { LoginComponent } from './login/login.component';
+import { SharedModule } from './shared/shared.module';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { TerminalComponent } from './components/terminal/terminal.component';
+import {NgxTypedJsModule} from 'ngx-typed-js';
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    NavbarComponent,
+    TerminalComponent
   ],
   imports: [
     BrowserModule,
+    SharedModule.forRoot(),
     ReactiveFormsModule,
+    CommonModule,
     AppRoutingModule,
     NgZorroAntdModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgxTypedJsModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
