@@ -1,0 +1,20 @@
+.login-form {
+    max-width: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.login-form-forgot {
+    float: right;
+}
+
+.login-form-button {
+    width: 100%;
+}
+
+i {
+    cursor: pointer;
+}
