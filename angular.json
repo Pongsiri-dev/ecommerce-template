@@ -13,8 +13,8 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "customWebpackConfig":{
-              "path":"./custom-webpack.config.js"
+            "customWebpackConfig": {
+              "path": "./custom-webpack.config.js"
             },
             "outputPath": "dist/ecommercetemplate",
             "index": "src/index.html",
@@ -73,8 +73,8 @@
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
-            "customWebpackConfig":{
-              "path":"./custom-webpack.config.js"
+            "customWebpackConfig": {
+              "path": "./custom-webpack.config.js"
             },
             "browserTarget": "ecommercetemplate:build"
           },
@@ -136,5 +136,8 @@
       }
     }
   },
-  "defaultProject": "ecommercetemplate"
+  "defaultProject": "ecommercetemplate",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -15,6 +15,7 @@ import { SharedModule } from './shared/shared.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TerminalComponent } from './components/terminal/terminal.component';
 import {NgxTypedJsModule} from 'ngx-typed-js';
+import { HomeComponent } from './components/home/home.component';
 
 registerLocaleData(en);
 
@@ -23,7 +24,8 @@ registerLocaleData(en);
     AppComponent,
     LoginComponent,
     NavbarComponent,
-    TerminalComponent
+    TerminalComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
