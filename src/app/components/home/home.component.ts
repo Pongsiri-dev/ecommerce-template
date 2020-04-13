@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
     });
     this.notification.blank(
       'Notification Item '+id,
-      'This is the content of the notification. This is the content of the notification. This is the content of the notification.'
+      'This is the content of the notification. This is the content of the notification'
     );
   }
   constructor(private notification:NzNotificationService) { }
