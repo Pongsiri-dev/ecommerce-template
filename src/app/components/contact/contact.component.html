@@ -1,0 +1,46 @@
+<div nz-row>
+    <div nz-col nzSpan="24">
+        <img src="../../../assets/images/banner/stock-vector-hanging-golden-1451865509.jpg" alt="">
+    </div>
+</div>
+<form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+    <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="email">E-mail</nz-form-label>
+        <nz-form-control [nzSm]="14" [nzXs]="24" nzErrorTip="The input is not valid E-mail!">
+            <input nz-input formControlName="email" id="email" />
+        </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzFor="nickname" nzRequired>
+            <span> Nickname <i nz-icon nz-tooltip nzTitle="What do you want other to call you" nzType="question-circle" nzTheme="outline"></i></span>
+        </nz-form-label>
+        <nz-form-control [nzSm]="14" [nzXs]="24" nzErrorTip="Please input your nickname!">
+            <input nz-input id="nickname" formControlName="nickname" />
+        </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+        <nz-form-label [nzSpan]="6" nzRequired nzFor="comment">Comment</nz-form-label>
+        <nz-form-control [nzSpan]="14" nzErrorTip="Please write something here!">
+          <textarea formControlName="comment" nz-input rows="5" placeholder="write any thing"></textarea>
+        </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzFor="captcha" nzRequired>Captcha</nz-form-label>
+        <nz-form-control [nzSm]="14" [nzXs]="24" nzErrorTip="Please input the captcha you got!"
+            nzExtra="We must make sure that your are a human.">
+            <div nz-row [nzGutter]="8">
+                <div nz-col [nzSpan]="12">
+                    <input nz-input formControlName="captcha" id="captcha" />
+                </div>
+                <div nz-col [nzSpan]="12">
+                    <button nz-button (click)="getCaptcha($event)">Get captcha</button>
+                </div>
+            </div>
+        </nz-form-control>
+    </nz-form-item>
+    <nz-form-item nz-row class="register-area">
+        <nz-form-control [nzSpan]="14" [nzOffset]="6">
+            <button nz-button nzType="primary">Register</button>
+        </nz-form-control>
+    </nz-form-item>
+</form>
