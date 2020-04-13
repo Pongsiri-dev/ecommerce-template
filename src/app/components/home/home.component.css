@@ -1,0 +1,29 @@
+nz-header,
+nz-footer {
+  background: #7dbcea;
+  color: #fff;
+}
+.ant-layout-header {
+    height: auto;
+    padding: 0;
+}
+.ant-layout-content{
+    padding: 50px 30px;
+}
+.ant-card{
+    margin-bottom: 8px;
+}
+nz-button {
+    margin-right: 8px;
+    margin-bottom: 12px;
+  }
+nz-button-group nz-button{
+    margin-right: 0;
+}
+.ant-card-body {
+    padding: 15px;
+    text-align: center;
+}
+nz-card-meta{
+    margin-bottom: 15px;
+}
