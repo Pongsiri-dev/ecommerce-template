@@ -20,7 +20,11 @@ import { MainLayoutComponent } from './components/main-layout/main-layout.compon
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzInputModule } from 'ng-zorro-antd/input';
-import {NgxTypedJsModule} from 'ngx-typed-js';
+import { NgxTypedJsModule } from 'ngx-typed-js';
+import { InMemoryDataService } from './services/in-memory-data.service';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { SortbyPipe } from './pipe/sortby.pipe';
+import { SortByPipe } from './pipe/sort-by.pipe';
 
 registerLocaleData(en);
 
@@ -32,7 +36,9 @@ registerLocaleData(en);
     TerminalComponent,
     HomeComponent,
     ContactComponent,
-    MainLayoutComponent
+    MainLayoutComponent,
+    SortbyPipe,
+    SortByPipe
   ],
   imports: [
     BrowserModule,
@@ -47,7 +53,13 @@ registerLocaleData(en);
     NgxTypedJsModule,
     NzMenuModule,
     NzGridModule,
-    NzInputModule
+    NzInputModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, {
+      dataEncapsulation: false,
+      delay: 500
+    }
+    )
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
