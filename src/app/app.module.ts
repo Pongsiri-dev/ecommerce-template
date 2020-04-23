@@ -23,7 +23,6 @@ import { NzInputModule } from 'ng-zorro-antd/input';
 import { NgxTypedJsModule } from 'ngx-typed-js';
 import { InMemoryDataService } from './services/in-memory-data.service';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { SortbyPipe } from './pipe/sortby.pipe';
 import { SortByPipe } from './pipe/sort-by.pipe';
 
 registerLocaleData(en);
@@ -37,7 +36,6 @@ registerLocaleData(en);
     HomeComponent,
     ContactComponent,
     MainLayoutComponent,
-    SortbyPipe,
     SortByPipe
   ],
   imports: [
