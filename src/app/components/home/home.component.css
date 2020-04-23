@@ -7,6 +7,10 @@ nz-footer {
     height: auto;
     padding: 0;
 }
+img{
+    width: 100%;
+    height: auto;
+}
 .ant-layout-content{
     padding: 50px 30px;
 }
@@ -26,4 +30,7 @@ nz-button-group nz-button{
 }
 nz-card-meta{
     margin-bottom: 15px;
+}
+.mgb-50{
+    margin-bottom: 50px;
 }

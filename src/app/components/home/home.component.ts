@@ -7,6 +7,12 @@ import { NzNotificationService } from 'ng-zorro-antd/notification';
 })
 export class HomeComponent implements OnInit {
   product = [1, 2, 3, 4, 5, 6, 7, 8];
+  bag = [
+    {"name":"street look", "img":'66235513.jpg','price':'1250.00'},
+    {"name":"street look", "img":'482699917.jpg','price':'1450.00'},
+    {"name":"street look", "img":'756708661.jpg','price':'1250.00'},
+    {"name":"street look", "img":'street-571361788.jpg','price':'1270.00'}
+  ];
   size = 'large';
   placement = 'topRight';
   clearBeforeNotifications(): void {

@@ -28,9 +28,15 @@ export class ContactComponent implements OnInit {
       email: [null, [Validators.email, Validators.required]],
       nickname: [null, [Validators.required]],
       comment: [null, [Validators.required]],
+<<<<<<< HEAD
       captcha: [null, [Validators.required]],
       agree: [false]
     });
   }
 
+=======
+      captcha: [null, [Validators.required]]
+    });
+  }
+>>>>>>> jeremydev
 }

@@ -14,13 +14,14 @@ import { LoginComponent } from './login/login.component';
 import { SharedModule } from './shared/shared.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TerminalComponent } from './components/terminal/terminal.component';
-import {NgxTypedJsModule} from 'ngx-typed-js';
 import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { MainLayoutComponent } from './components/main-layout/main-layout.component';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzInputModule } from 'ng-zorro-antd/input';
+import {NgxTypedJsModule} from 'ngx-typed-js';
+
 registerLocaleData(en);
 
 @NgModule({
