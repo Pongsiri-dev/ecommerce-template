@@ -5,7 +5,9 @@
     </li>
     <li nz-menu-item nzSelected>
         <!-- <i nz-icon nzType="mail"></i> -->
-        <i nz-icon nzType="home" nzTheme="outline"></i> หน้าแรก
+        <a routerLink="home">
+            <i nz-icon nzType="home" nzTheme="outline"></i> หน้าแรก
+        </a>
     </li>
     <li nz-submenu nzTitle="หมวดหมู่" nzIcon="appstore">
         <ul>
@@ -39,6 +41,6 @@
         <i nz-icon nzType="appstore"></i> ตั้งค่า
     </li>
     <li nz-menu-item>
-        <a href="#" target="_blank" rel="noopener noreferrer">ติดต่อเรา</a>
+        <a routerLink="contact" rel="noopener noreferrer">ติดต่อเรา</a>
     </li>
 </ul>
