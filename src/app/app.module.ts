@@ -17,7 +17,10 @@ import { TerminalComponent } from './components/terminal/terminal.component';
 import {NgxTypedJsModule} from 'ngx-typed-js';
 import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
-
+import { MainLayoutComponent } from './components/main-layout/main-layout.component';
+import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { NzGridModule } from 'ng-zorro-antd/grid';
+import { NzInputModule } from 'ng-zorro-antd/input';
 registerLocaleData(en);
 
 @NgModule({
@@ -27,7 +30,8 @@ registerLocaleData(en);
     NavbarComponent,
     TerminalComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    MainLayoutComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +43,10 @@ registerLocaleData(en);
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    NgxTypedJsModule
+    NgxTypedJsModule,
+    NzMenuModule,
+    NzGridModule,
+    NzInputModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

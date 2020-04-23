@@ -1,11 +1,12 @@
 <ul nz-menu nzMode="horizontal">
-    <li nz-menu-item>
+    <!-- <li nz-menu-item> -->
         <!-- <i nz-icon nzType="appstore"></i> -->
-        <i nz-icon nzType="shop" nzTheme="outline"></i>
-    </li>
+        <!-- <i nz-icon nzType="shop" nzTheme="outline"></i>
+    </li> -->
     <li nz-menu-item nzSelected>
         <!-- <i nz-icon nzType="mail"></i> -->
-        <i nz-icon nzType="home" nzTheme="outline"></i> หน้าแรก
+        <span  routerLink="/home" routerLinkActive="active" >
+            <span nz-icon nzType="home" nzTheme="outline"></span> หน้าแรก </span> 
     </li>
     <li nz-submenu nzTitle="หมวดหมู่" nzIcon="appstore">
         <ul>
@@ -39,6 +40,6 @@
         <i nz-icon nzType="appstore"></i> ตั้งค่า
     </li>
     <li nz-menu-item>
-        <a href="#" target="_blank" rel="noopener noreferrer">ติดต่อเรา</a>
+        <span routerLink="/contact" routerLinkActive="active" >ติดต่อเรา </span> 
     </li>
 </ul>
