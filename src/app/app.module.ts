@@ -24,6 +24,7 @@ import { NgxTypedJsModule } from 'ngx-typed-js';
 import { InMemoryDataService } from './services/in-memory-data.service';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { SortByPipe } from './pipe/sort-by.pipe';
+import { UpperCaseDirective } from './directives/upper-case.directive';
 
 registerLocaleData(en);
 
@@ -36,7 +37,8 @@ registerLocaleData(en);
     HomeComponent,
     ContactComponent,
     MainLayoutComponent,
-    SortByPipe
+    SortByPipe,
+    UpperCaseDirective
   ],
   imports: [
     BrowserModule,

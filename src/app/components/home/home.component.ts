@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
+import { NzIconService } from 'ng-zorro-antd/icon';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
